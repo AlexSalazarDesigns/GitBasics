@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to VC - Coding & Cocktails KC</title>
+
+		<meta name="description" content="This is the official Coding & Cocktails Command Line course.">
+		<meta name="author" content="Kansas City Women in Technology">
+        <meta name="keywords" content="Kansas City Women in Technology, kcwit, women engineers, learn to code, girls in tech, women in tech, coding and cocktails, learn front-end development">
+        <meta property="og:title" content="Intro Version Control - Coding & Cocktails KC" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="http://codingandcocktails.kcwomenintech.org/images/logo.png" />
+        <meta property="og:url" content="http://codingandcocktails.kcwomenintech.org"/>
+        <meta property="og:description" content="This is the official Coding & Cocktails Command Line course."/>
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="http://codingandcocktails.kcwomenintech.org">
+        <meta name="twitter:title" content="Coding And Cocktails by Kansas City Women in Technology">
+        <meta name="twitter:description" content="This is the official Coding & Cocktails Command Line course.">
+        <meta name="twitter:image" content="http://codingandcocktails.kcwomenintech.org/images/logo.png">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/codingandcocktails.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor--><link rel="stylesheet" href="lib/css/light.css">
+		<!-- dark editor<link rel="stylesheet" href="lib/css/dark.css">-->
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section id="coding-and-cocktails">
+                    <img src="images/logo-large.png" alt="Coding &amp; Cocktails" />
+                </section>
+				<section id="intro-to-web-concepts">
+					<h3>Version Control Basics Using Git</h3>
+                    <img src="images/logo.png" alt="Coding &amp; Cocktails" />
+                    <p>
+                        Slides available at:
+                        <a href="http://kansascitywomenintechnology.Git Hub.io/CommandLine" target="_blank">http://kansascitywomenintechnology.Git Hub.io/GitBasics</a>
+                    </p>
+				</section>
+                <section id="last-month">
+                    <h2>Last Month</h2>
+                    <p>In February we learned how to navigate our computer using the Command Line:</p>
+                    <ul>
+                        <li>changing directories using the CD command</li>
+                        <li>creating new folders using MKDIR</li>
+                        <li>building basic text documents using ECHO</li>
+                    </ul>
+                <br>    
+                <br>
+                <h4>We are going to build on last month's skills tonight!</h4>
+                </section>
+                <section id="topics">
+                    <h2>What we'll cover</h2>
+                    <ul>
+                        <li>What is Version Control?</li>
+                        <li>How Does Version Control Help Development Teams?</li>
+                        <li>Distinguish Between Git, Git Hub, and GitBash</li>
+                        <li>Build your first repository (a.k.a. 'repo')</li>
+                        <li>Practice Collaborating using Git, Git Hub, and Git Bash</li>
+                        <li>Stretch Goal: Start your personal web page, hosted on Git Hub</li>
+                    </ul>
+                </section>
+                <section id="inspiration">
+                    <section>
+                        <h2>But First ...</h2>
+                        <h4>Inspiring Female Developers</h4>
+                        <ul>
+                            <li class="fragment">Katrina Owen<a href="https://twitter.com/kytrinyx" target="_blank">@kytrinyx</a></li>
+                        </ul>
+                    </section>
+                    <section id="Katrina Owen">
+                        <h2>Katrina Owen</h2>
+                        <h4>Exercism.io</h4>
+                        <a href="" target="_blank">
+                            <img src="images/katrina.jpg" alt="Katrina Owen">
+                        </a>
+                        <p>
+                            <a href="http://exercism.io/" target="_blank">exercism.io</a>
+                        </p>
+                        <aside class="notes">
+
+                        </aside>
+                    </section>
+<!--                    <section id="Miral Kotb">
+                        <h2>Miral Kotb</h2>
+                        <h4>iluminate</h4>
+                        <iframe src="https://player.vimeo.com/video/59143775" width="775" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <p>
+                            <a href="http://iluminate.com/" target="_blank">iluminate.com</a>
+                        </p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Miral combined her passions for dance and computers to create an entertainment experience.</li>
+                                <li>She studied COmputer Science at Columbia University while studying dance at Barnard College.</li>
+                                <li>Had a vision of dancers wearing costumes that illuminated wirelessly and complimented the music and coreography</li>
+                                <li>Showed on America's Got Talent</li>
+                            </ul>
+                        </aside>
+                    </section> -->
+                </section> 
+                <section id="what-is-it">
+                    <h2>What is Version Control?</h2>
+                    <br>
+                    <br>
+                    <p>A practice or method of recording changes made to a project that distinguishes between distinct updates and allows users to review, modify or rollback to prior versions of code. </p>
+                    <aside class="notes">
+                    <p>Version control is not the same thing as backing up a file.  In version control you are specifically tracking changes made throughout the development of a project.  Backing up stores a copy of the fully functioning file in case it is lost.</p>
+                    </aside>
+                </section>
+                <section id="10-Second History">
+                    <section>
+                    <h2>B.G. - Before Git</h2>
+                    <h4>Once upon a time. . . </h4>
+                    <img src="images\CVS1.gif" alt="Centralized VCS Graphic" height="335" width-"432">
+                    <br>
+                     Image Credit: <a href="https://www.smashingmagazine.com/2011/07/modern-version-control-with-git-series/" target="_blank">Smashing Magazine</a>
+                    </section>
+                    <aside class="notes">
+                        Centralized system - the main (production) copy of the program exists in a centralized location. If you want to work on it, you ‘check out’ a copy and a message is posted that automatically tells the next person who has it checked out first.  Programmer A and B have to coordinate their changes.  Either programmer A loads her changes and then programmer B checks it out and goes again, or in the interest of time, A/B may work together to merge their changes and load up the program at once. This is both time consuming and inefficient, and muddies the pedigree of changes.  What if A’s changes work but something unrelated about B’s causes an issue? Can you back out A’s changes without backing out B’s?
+                    </aside>
+                    <section>
+                        <h2>A.L. After Linus</h2>
+                        <h2>The Rise of Git</h2>
+                    <img src="images\git1_2_distributed-vcs.gif" alt="Distributed VCS Graphic" height="335" width="432">
+                    <br>
+                    Image Credit: <a href="https://www.smashingmagazine.com/2011/07/modern-version-control-with-git-series/" target="_blank">Smashing Magazine</a>
+                    <aside>
+                        <p>Early versions included Mercurial and Bazaar, but Git, developed by Linus Torvold (also the inventor and vision behind the Linux operating system on which Android technology is based) has quickly overtaken all of them.</p>
+                    </aside>
+                    </section>
+                </section>
+    <section id="Git and its Tools">
+            <section>
+                <h2>Git vs. Git Hub</h2>
+                <br>
+                <br>
+                <p><em><strong>Git</strong></em> is the version control concept and system.</p>
+                <br>
+                <p><em><strong>Git Hub</strong></em> is one of several tools developers may use to manage a project using Git. </p>
+            </section>
+            <section>
+                <h3>Exploring the Interfaces</h3>
+                <img src="images/GitBash.png" alt="GitBash Screenshot">
+                <aside>Git Bash does not universally recognize commands from other frameworks.  You can execute git commands from your command line prompt, but you cannot always execute other commands (like Meteor) from GitBash. Functionally, however, one command prompt is much like another.</aside>
+            </section>
+            <section>
+                <h3>Exploring the Interfaces</h3>
+                <img src="images/GitGui.png" alt="GUI Screenshot">
+            </section>            
+            <section>
+                <h3>Git Hub</h3>
+                <img src="images/GitHub.png" alt="Git Hub Screenshot">
+                <aside>Have students open Git Hub.  Useful for searching repositories, copying links to be cloned, and reviewing changes. We will come back to this later in the evening.</aside>
+            </section>
+    </section>
+    <section>
+        <h2>Getting Started on Git Hub</h2>
+        <ul>
+            <li>Intialize your first repository</li>
+            <br>
+            <li>Clone your new repository to your desktop</li>
+        </ul>
+    </section>
+        <section>
+        <h2>Git Work Flow</h2>
+        <ul>
+            <li><strong>Stage / Track</strong> your changes with <em>git add</em></li>
+            <li><strong>Commit</strong> your changes using <em>git commit -m 'my message'</em></li>
+            <li><strong>Push</strong> the changes to your Git Hub repository using <em>git push origin master</em></li>
+        </ul>
+        <br><br><br>
+        <a href="https://www.git-tower.com/blog/git-cheat-sheet/" target="_blank">Git Cheat Sheet by Tobias Günther</a><br>
+        <a href="http://bit.ly/GHCheatSheet" target="_blank">Git Hub's Official Git Cheat Sheet</a>
+    </section>
+    <section>
+        <h2>Git Work Flow</h2>
+        <img src="images\gitworkflow1.png" alt="Git Work Flow">
+        <p>Image Credit:  <a href="https://Git Hub.com/gaui/git">https://Git Hub.com/gaui/git</a></p>
+    </section>
+
+
+  
+<!-- branching/forking/merge conflicts slides here -->
+<!-- branching/forking/merge conflicts slides here -->
+<!-- branching/forking/merge conflicts slides here -->
+<!-- branching/forking/merge conflicts slides here -->
+<!-- branching/forking/merge conflicts slides here -->
+<!-- branching/forking/merge conflicts slides here -->
+
+
+
+                <section id="questions">
+                  <h2>Questions?</h2>
+                  <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+                    <div class ="clear"></div></div>
+                </section>
+                <section id="contact">
+                    <h2>Thank You!</h2>
+                    <h4>Keep in touch!</h4>
+                    <div>
+                        <a href="http://codingandcocktails.kcwomenintech.org" target="_blank">codingandcocktails.kcwomenintech.org</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-twitter"></i><a href="https://twitter.com/codecocktailskc" target="_blank">&nbsp;&nbsp;@codecocktailskc</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i><a href="https://www.facebook.com/codingandcocktailsKC" target="_blank">&nbsp;&nbsp;facebook.com/codingandcocktailsKC/</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-slack"></i><a href="https://kcwit.slack.com/" target="_blank">&nbsp;&nbsp;kcwit.slack.com</a>
+                    </div>
+                    <h4 style="margin-top: 2em;"><a href="http://www.eventbrite.com/e/coding-cocktails-march-tickets-20155162634?aff=FebPresMar2016">Join us March 12 for an Introduction to Git Git Hub &amp; Version Control!</a></h4>
+                </section>
+			</div>
+  		<footer>
+        </footer>
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://Git Hub.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: false,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
