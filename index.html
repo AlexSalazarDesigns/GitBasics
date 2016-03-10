@@ -46,14 +46,15 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
                 <section id="coding-and-cocktails">
-                    <img src="images/logo-large.png" alt="Coding &amp; Cocktails" />
+                    <img src="images/logo-large.png" alt="Coding &amp; Cocktails" height="75%" width="75%"/>
+                    <p>VML WiFi Username = GUEST  PW = GUEST PW</p>
                 </section>
 				<section id="intro-to-web-concepts">
 					<h3>Version Control Basics Using Git</h3>
                     <img src="images/logo.png" alt="Coding &amp; Cocktails" />
                     <p>
                         Slides available at:
-                        <a href="http://kansascitywomenintechnology.GitHub.io/CommandLine" target="_blank">http://kansascitywomenintechnology.GitHub.io/GitBasics</a>
+                        <a href="http://kansascitywomenintechnology.GitHub.io/GitBasics" target="_blank">http://bit.ly/CnCGitBasics</a>
                     </p>
 				</section>
                 <section id="last-month">
@@ -66,7 +67,7 @@
                     </ul>
                 <br>    
                 <br>
-                <h4>We are going to build on last month's skills tonight!</h4>
+                <h5>We are going to build on last month's skills tonight!</h5>
                 </section>
                 <section id="topics">
                     <h2>What we'll cover</h2>
@@ -79,6 +80,15 @@
                         <li>Discuss forking and branching</li>
                         <li>Practice collaborating using Git</li>
                     </ul>
+                </section>
+                <section>
+                    <h2>But First . . . </h2>
+                    <br>
+                    <h3>Let's Meet Our Mentors!</h3>
+                        <br>
+                    <h6>And</h6>
+                    <br>
+                    <h3>A Special Announcement</h3>
                 </section>
                 <section>
                     <h2>Here We Go!</h2>
@@ -134,11 +144,7 @@
                     <section>
                         <h2>Linus Torvold</h2>
                         <img src="images\Linus.jpg" Alt="Linus Tovold">
-                        <p>"Torvalds quipped about the name git, which is British English slang meaning "unpleasant person": "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'. - Wikipedia</p>
-                        <aside class="notes">
-                        Torvolds is the creative force behind the Linux operating system and is known as the father of the open source movement.
-                        </aside>
-                    </section>
+                     </section>
                     <section>
                         <h2>A.G. (After Git)</h2>
                     <img src="images\git1_2_distributed-vcs.gif" alt="Distributed VCS Graphic" height="415" width="540">
@@ -153,7 +159,7 @@
             <section>
                 <h2>Git vs. GitHub</h2>
                 <br>
-                <p><em><strong>Git</strong></em> is the version control concept and system.</p>
+                <p><em><strong>Git</strong></em> is the distributed version control concept and system.</p>
                 <br>
                 <p><em><strong>Git Bash/iTerm2</strong></em> and <em><strong>Git Desktop</strong></em> are tools that help you interact with Git.</p>
                 <br>
@@ -165,38 +171,41 @@
             </section>
             <section>
                 <h3>Exploring the Interfaces</h3>
-                <img src="images/GitBash.png" alt="Git Bash Screenshot">
+                <!--<img src="images/GitBash.png" alt="Git Bash Screenshot"> -->
+                        <video width="800" height="500" controls>
+                            <source src="images/ExploringInterfaces.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                 <aside class="notes">Git Bash does not universally recognize commands from other frameworks.  You can execute git commands from your Command Line prompt, but you cannot always execute other commands (like Meteor) from Git Bash. Functionally, however, one command prompt is much like another.</aside>
             </section>
             <section>
-                <h3>Exploring the Interfaces</h3>
+                <h3>Exploring the Interfaces - Git Desktop</h3>
                 <img src="images/GitGui.png" alt="GUI Screenshot">
             </section>            
             <section>
-                <h3>GitHub</h3>
+                <h3>Exploring the Interfaces - GitHub</h3>
                 <img src="images/GitHub.png" alt="GitHub Screenshot">
                 <a href="https://github.com/TamaraCopple" target="_blank">GitHub Profile</a>
                 <aside class="notes">Have students open GitHub.  Useful for searching repositories, copying links to be cloned, and reviewing changes. We will come back to this later in the evening.</aside>
             </section>
     </section>
     <section>
-        <h2>Getting Started on GitHub</h2>
-            <br>
-        <h4>Intialize your first repository</h4>
-            <br>
-        <h4>Clone your new repository to your desktop</h4>
+        <h3>Initialize and Clone Your First Repo</h3>
+            <video width="800" height="500" controls>
+              <source src="images/CloneRepo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
         </section>
         <section>
         <h2>Git Workflow</h2>
-            <p><strong>Stage (track)</strong> your changes with <em>git add</em></p>
-            <pre><code>
-                git add -A
-            </code></pre>
         <ul>
-            <li><strong>Commit</strong> your changes using <em>git commit -m 'my message'</em></li>
-            <li><strong>Push</strong> the changes to your GitHub repository using <em>git push origin master</em></li>
+            <li><strong>Stage (track)</strong> your changes with
+            <pre><code>git add -A</code></pre></li>
+            <li><strong>Commit</strong> your changes using <pre><code>git commit -m'Message'</code></pre></li>
+            <li><strong>Push</strong> the changes to your GitHub repository using <pre><code>git push origin master</code></pre></li>
+            <li>Cheat sheets can be helpful. Here are a couple we liked:</li>
         </ul>
-        <br><br><br>
+        <br>
         <a href="https://www.git-tower.com/blog/git-cheat-sheet/" target="_blank">Git Cheat Sheet by Tobias Günther</a><br>
         <a href="http://bit.ly/GHCheatSheet" target="_blank">GitHub's Official Git Cheat Sheet</a>
     </section>
@@ -205,6 +214,11 @@
         <img src="images\gitworkflow1.png" alt="Git Workflow">
         <p>Image Credit:  <a href="https://GitHub.com/gaui/git">https://GitHub.com/gaui/git</a></p>
     </section>
+    <section>
+        <h2>Add / Commit / Push</h2>
+            <video width="800" height="500" controls>
+              <source src="images/Pushing.mp4" type="video/mp4">
+                Your browser does not support the video tag</section>
     <section>
         <h2>Forking</h2>
         <br>
@@ -216,20 +230,31 @@
         <p>###</p>
         <h5>Let's Practice Forking a Repo</h5>
     </section>
-    <aside class="notes">5 MINUTE TIMER HERE - WALK THROUGH FORK, BUT LET THEM CLONE TO DESKTOP THEMSELVES</aside>
+    <section>
+        <h3>Forking a Repository</h3>
+            <video width="800" height="500" controls>
+              <source src="images/Forking.mp4" type="video/mp4">
+                Your browser does not support the video tag.</video>
+    </section>
     <section>
         <h2>Branching</h2>
         <br>
-        <h5>Branching</h5>
         <ul>
-            <li>You are a collaborator on a program with permission to update the master repository</li>
-            <li>Use branches to isolate features (user stories) of the code</li>
-            <li>Each branch can be a single feature, developed independently from other features</li>
+            <li>You are part of the project team</li>
+            <li>Each branch can be a single feature (aka 'user story' or 'requirement', developed independently from other features</li>
             <li>Each developer works on her own feature and then merges her changes into the master</li>
             <li>In this method, pull requests become a way of asking for a peer code review.</li>
         </ul>
                 <p>###</p>
         <h5>Let's Practice Branching</h5>
+    </section>
+    <section>
+        <h2>Branching Video</h2>
+<!--        <video width="800" height="500" controls>
+              <source src="images/branching.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+-->
     </section>
     <section>
         <h2>Resolving Merge Conflicts</h2>
